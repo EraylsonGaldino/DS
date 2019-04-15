@@ -10,7 +10,6 @@ from keras.utils import np_utils
 from sklearn.externals import joblib
 from metricas import mape, smape, mse, mae, pocid
 import matplotlib.pyplot as plt
-from select_approach import *
 from preprocessamento import *  
 import pandas as pd
 
