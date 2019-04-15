@@ -60,8 +60,8 @@ def carregar_pool(serie_name, iter=20, exe=10):
 
 def treinar_lstm(x_train, y_train, x_val, y_val, exe=10, iter=50):
 
-    lstm_neuronios = [10]  #[10, 50, 100, 500]
-    func_act = ['relu']  #['sigmoid', 'relu']
+    lstm_neuronios = [5, 10, 50, 100, 500]
+    func_act = ['sigmoid', 'relu']
 
 
     X_tr = numpy.reshape(x_train,(x_train.shape[0], x_train.shape[1], 1))
