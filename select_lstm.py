@@ -25,7 +25,7 @@ def dados(serie_name):
 
    
     print('Série:', serie_name)
-    endereco = 'series\\'+serie_name+'.txt'
+    endereco = '/series/'+serie_name+'.txt'
     dados = pd.read_csv(endereco, delimiter=' ', header=None)
     serie = dados[0]
     serie_normalizada = normalise(serie)
