@@ -125,6 +125,11 @@ def run():
 
         filename = serie+'_LSTM_generator.h5'
         modelo_lstm.save(filename)
+        
+        file = open("log_experiment.txt","w")
+        texto = "Serie "+ s +" finalizada!"
+        file.write(texto) 
+        file.close() 
 
 
 
